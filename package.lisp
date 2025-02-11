@@ -61,8 +61,7 @@
   (:documentation "Functor map."))
 
 (defgeneric =< (f obj)
-  (:documentation "If a ADT has a concept of \"negative\",
- this method can gives an opportunity to convert into a  \"positive\" case."))
+  (:documentation "This is first of a bifunctor."))
 
 (defgeneric bimap (f g obj)
   (:documentation "Bimap"))

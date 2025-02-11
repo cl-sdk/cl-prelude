@@ -48,6 +48,4 @@
   (result/bimap f g obj))
 
 (defmethod =< (f (obj result))
-  (if (ok? obj)
-      obj
-      (funcall f obj)))
+  (if (ok? obj) obj (fail (funcall f (fail%0 obj)))))
